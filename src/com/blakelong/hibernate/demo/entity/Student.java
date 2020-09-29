@@ -1,4 +1,4 @@
-package com.blakelong.jdbc;
+package com.blakelong.hibernate.demo.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
