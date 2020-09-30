@@ -40,6 +40,11 @@ public class QueryStudentDemo {
 			System.out.println("\nStudent with last name of Doe OR first name of Mika:");
 			displayStudents(theStudents);
 			
+			// query students where email LIKE '%gmail.com'
+			theStudents = session.createQuery("FROM Student WHERE email LIKE '%gmail.com'").getResultList();
+			System.out.println("\nStudent with email that ends with gmail.com:");
+			displayStudents(theStudents);
+			
 			
 			// commit transaction
 			session.getTransaction().commit();
